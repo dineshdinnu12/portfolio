@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>portfolio</title>
+        <link rel="stylesheet"  href="css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <section>
+            <div class="box">
+            </div>  
+            <div class="container">
+            <div class="formbox">
+                <h2>Log in</h2>
+                <form name="myform" action="C:\Users\anvik\Desktop\css5\index.html" autocomplete="off" onsubmit="return validation()" >
+                    <div class="inputbx">
+                        <h5>Username</h5>
+                        <span id="userr"></span>
+                        <input type="text" name="user" id="user"> 
+                        
+                    </div>
+                    <div class="inputbx">
+                        <h5>password</h5>
+                        <span id="passs"></span>
+                        <input type="password" name="pass" id="pass">            
+                    </div>
+
+                    <lable><input type="checkbox" name="">Remember me</lable>
+
+                    <div class="inputbx">
+                    <input type="submit" value="Sign in" id="submit">
+                        </div>
+                        <div class="inputbx">
+                            <p>dont have an account</p><a href="#">Sign up</a>
+                        </div>
+                </form>
+                
+                
+                <script>
+                    function validation()
+                    {
+                       var user= document.getElementById('user').value;
+                        if(user== "" )
+                        {
+                            document.getElementById('userr').innerHTML="**please enter user name**";
+                            return false;
+                        }
+                        var pass= document.getElementById('pass').value;
+                        if(pass.length<6)
+                        {
+                            document.getElementById('passs').innerHTML="**password must be 6 charecter above**";
+                            return false;
+                        }
+                    }
+                </script>
+                </div>
+            </div>         
+        </section>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+section
+{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display: flex;
+}
+section .box
+{
+    width:50%;
+    height:100vh;
+    background-image: url('../pr1.jpg');
+    position: center;
+    background-size: cover;
+}
+section .container
+{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../peek.jpg');
+    position: center;
+    background-size: cover;
+    border-radius:25px;
+    box-shadow: 30px 30px 50px;
+}
+section .formbox
+{
+ 
+display: flex;
+justify-content: center;
+align-items:center ;
+width:50%;
+height:100vh;
+   
+}
+section .formbox h2
+{
+    position:absolute;
+    bottom:66%;
+    font-size: 40px;
+    font-weight:700;
+}
+section .formbox .inputbx input
+{
+    width:100%;
+    margin:20px 0;
+    padding:10px 20px;
+    border-radius: 20px;
+    border:2px solid #140820;
+}
+
+section .formbox .inputbx h5
+
+{
+    font-weight: 500;
+    color:palevioletred;
+    margin-top:2px palevioletred;
+    border-bottom:1px solid
+}
+section .formbox .inputbx [type="submit"]
+{
+    background-color: blueviolet;
+    color:whitesmoke;
+}
+section #userr
+{
+    color:red;
+}
+section #passs
+{
+    color:red;
+}
+section .container
+{
+    width:25%;
+    height:70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid red;
+    margin-left:17%;
+    margin-top:10% ;
+    transform:translate;
+}
+
+@media  screen and (ax-width:700px)
+{
+    section .formbox h2
+    {
+        position:absolute;
+        bottom:80%;
+    }
+}
